@@ -3,7 +3,7 @@ This is a Powershell rewrite of the [bash script](https://gohugo.io/hosting-and-
 
 ## How to use
 ![example of using script to commit a change](/example.gif)
-1. Setup your project structure so that Hugo code lives in the master branch and the genearated files live in the gh-pages branch. Details in the docs [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-from-your-gh-pages-branch).
+1. Setup your project structure so that Hugo code lives in the master branch and the generated files live in the gh-pages branch. Details in the docs [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-from-your-gh-pages-branch).
 2. Put deploy at the root of the master branch.
 3. Make changes to the master branch and test using `hugo server`.
 4. Open Powershell, navigate to the master branch directory, and execute `deployHugo.ps1`. The script will abort if there are no changes to commit.
