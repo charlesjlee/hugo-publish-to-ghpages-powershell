@@ -1,6 +1,4 @@
-﻿# https://gohugo.io/tutorials/github-pages-blog/
-
-param (
+﻿param (
     [Parameter(Mandatory=$true)][string]$commitMessage
 )
 
@@ -24,7 +22,6 @@ Remove-Item .\public\* -Force -Recurse -Exclude '.git'
 
 "Generating site"
 hugo --quiet
-'charlesjlee.com' | Out-File -filepath '.\public\CNAME' -NoNewline
 
 "Committing master branch"
 git add --all
